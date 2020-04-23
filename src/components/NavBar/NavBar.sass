@@ -1,0 +1,54 @@
+.navbar
+  display: flex
+  padding-top: 2.5rem
+  align-items: center
+  justify-content: space-between
+  .logo
+    margin: 0
+    color: #fff
+    font-size: 4rem
+    transform: translateY(-8px)
+    cursor: pointer
+    span
+      display: inline-block
+      margin-right: 0.2rem
+      -webkit-backface-visibility: hidden
+      color: #1890ff
+      font-weight: 600
+      font-size: 4.2rem
+      transform: rotate(-12deg)
+      transition: all .5s ease
+    &__sub
+      display: block
+      margin: 0 auto
+      padding: 0rem .8rem
+      font-size: 1.3rem
+      color: #333
+      width: 80%
+      font-weight: 600
+      background-color: #fafafa
+      text-align: center
+      border-radius: 1rem
+      transform: translateY(-7px)
+    &:hover
+      span
+        transform: rotate(0deg)
+  .sign-btn
+    border-width: 1.8px
+    transition: all .3s ease-out
+    &:hover
+      border-color: #fff
+      background-color: #fff !important
+
+.user-account
+  &__name
+    font-size: 1.7rem
+    outline: none
+    cursor: pointer
+  &-select 
+    .ant-cascader-menu
+      height: auto 
+      &-item-active
+        font-weight: 400 !important
+        &:hover
+          background-color: #e6f7ff !important

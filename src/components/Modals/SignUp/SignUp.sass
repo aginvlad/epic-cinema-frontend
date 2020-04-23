@@ -1,0 +1,33 @@
+#sign-up-modal
+  position: fixed !important
+  top: 50%
+  left: 50%
+  display: flex
+  flex-flow: column
+  justify-content: center
+  padding: 4rem 4rem !important
+  border-radius: 1.2rem
+  width: 54rem
+  background-color: #fff
+  transform: translate(-50%, -50%)
+  z-index: 100
+  .ant-row
+    &:last-child
+      margin-bottom: 0
+  button
+    width: 60%
+  .close-modal
+    position: absolute
+    top: 1.5rem
+    right: 1.5rem
+    font-size: 1.8rem
+    cursor: pointer
+
+.backdrop
+  position: fixed !important
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+  background-color: rgba(0,0,0,0.4)
+  z-index: 90

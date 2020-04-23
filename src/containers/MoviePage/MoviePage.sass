@@ -1,0 +1,65 @@
+.movie-page
+  display: flex 
+  margin-top: 6rem
+  &__poster
+    height: 51.2rem
+    border-radius: 1.5rem
+  &__about
+    position: relative
+    padding: 0rem 6rem
+    width: calc(100% - 35rem)
+    #watch-trailer
+      width: 15rem
+    .movie
+      &-title
+        color: #fff
+        font-size: 4rem
+        text-align: center
+      &-genres
+        margin-bottom: 1rem
+        font-weight: 300
+        font-style: italic
+        font-size: 1.8rem
+        opacity: 60%
+      &-desc
+        font-size: 2.1rem
+      &-sessions
+        display: flex
+        flex-flow: column
+        justify-content: center
+        margin-top: 2rem
+        a, .disabled-link
+          width: 15rem
+          margin-top: 2rem
+        .edit-movie
+          position: absolute
+          top: 1rem
+          right: 0
+          z-index: 50
+        .session
+          font-size: 1.8rem
+          &-picker
+            display: inline-block
+            outline: none
+            color: #40a9ff
+            cursor: pointer
+
+.trailer-window
+  position: fixed
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  z-index: 100
+
+.ant-cascader-menus
+  color: #314659
+
+.ant-tooltip 
+  .ant-tooltip-arrow::before, .ant-tooltip-inner
+    background-color:#40a9ff
+
+.no-sessions
+  display: flex
+  flex-flow: column
+  i
+    font-size: 3rem

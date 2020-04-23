@@ -1,0 +1,90 @@
+@font-face 
+    font-family: 'Nunito'
+    src: url('assets/fonts/Nunito-ExtraLight.woff2') format('woff2')
+    font-weight: 300
+    font-style: normal
+@font-face 
+    font-family: 'Nunito'
+    src: url('assets/fonts/Nunito-Regular.woff2') format('woff2')
+    font-weight: normal
+    font-style: normal
+@font-face 
+    font-family: 'Nunito'
+    src: url('assets/fonts/Nunito-SemiBold.woff2') format('woff2')
+    font-weight: 500
+    font-style: normal
+@font-face 
+    font-family: 'Nunito'
+    src: url('assets/fonts/Nunito-ExtraBold.woff2') format('woff2')
+    font-weight: 600
+    font-style: normal
+@font-face 
+    font-family: 'Nunito'
+    src: url('assets/fonts/Nunito-Black.woff2') format('woff2')
+    font-weight: 800
+    font-style: normal
+
+html
+  font-size: 10px
+
+body
+  font-family: 'Nunito', sans-serif
+  background: #333 url(assets/bg.png) top center
+  padding: 0 8rem
+  color: #fff
+  height: auto
+
+  .ant-result-404
+    margin-top: 12rem
+    margin-bottom: 0
+    padding-bottom: 0
+    .ant-result-title, .ant-result-subtitle
+      color: #fff !important
+      font-weight: 500
+ 
+  .section
+    &-header
+      font-size: 3.5rem
+      color: #fff
+    &-desc
+      font-size: 2.1rem
+      opacity: 90%
+
+  img
+      user-select: none
+
+  .toRight
+    text-align: right
+
+::selection
+  background-color: #40a9ff
+
+
+::-webkit-scrollbar
+  width: 10px
+
+::-webkit-scrollbar-track
+  background: #fff
+
+::-webkit-scrollbar-thumb
+  border-radius: 50px
+  background:#1890ff
+
+::-webkit-scrollbar-thumb:hover
+  background: #40a9ff
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+    -webkit-appearance: none
+
+input[type=number]
+    -moz-appearance: textfield
+
+.antlink
+  color: #1890ff
+  border: none
+  background-color: transparent
+  outline: none
+  cursor: pointer
+  &:hover
+    color: #096dd9
